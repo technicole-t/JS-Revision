@@ -2,7 +2,7 @@
 const accessName = (person) => {
     // given a person object of the form {name: 'Bob', age: 42}
     // should return 'Bob'
-}
+};
 
 
 const accessObject = (obj,key) => {
@@ -33,7 +33,7 @@ const addProperty = (obj,keyValuePair) => {
 const removeName = (person) => {
     // remove the age property from a person
     // do NOT use the delete operator
-}
+};
 
 const removeProperty = (obj,key) => {
     // remove the key value pair from an object
@@ -51,5 +51,5 @@ const findNestedItem = (map,route) => {
     // create a function that will use the route string to 
     // access the nested object -> the map object will always be nested at 2 levels 
     // the map could be have whatever keys you like
-}
+};
 

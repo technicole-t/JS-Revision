@@ -1,73 +1,67 @@
 // =====> ACCESSING OBJECTS <===== //
+// You do NOT need to write tests for these questions :)
 
 const memberOfParliament = {
-    'member_id': '41460',
-    'person_id': '10259',
-    'name': 'David Hanson',
-    'party': 'Labour',
-    'constituency': 'Delyn',
-    'office': [
-      {
-        'dept': 'Panel of Chairs',
-        'position': 'Member',
-        'from_date': '2017-06-22',
-        'to_date': '9999-12-31'
-      },
-      {
-        'dept': 'Justice Committee',
-        'position': 'Member',
-        'from_date': '2017-09-11',
-        'to_date': '9999-12-31'
-      },
-      {
-        'dept': 'Intelligence and Security Committee of Parliament',
-        'position': 'Member',
-        'from_date': '2017-11-16',
-        'to_date': '9999-12-31'
-      }
-    ]
+  'member_id': '41460',
+  'person_id': '10259',
+  'name': 'David Hanson',
+  'party': 'Labour',
+  'constituency': 'Delyn',
+  'office': [
+    {
+      'dept': 'Panel of Chairs',
+      'position': 'Member',
+      'from_date': '2017-06-22',
+      'to_date': '9999-12-31'
+    },
+    {
+      'dept': 'Justice Committee',
+      'position': 'Member',
+      'from_date': '2017-09-11',
+      'to_date': '9999-12-31'
+    },
+    {
+      'dept': 'Intelligence and Security Committee of Parliament',
+      'position': 'Member',
+      'from_date': '2017-11-16',
+      'to_date': '9999-12-31'
+    }
+  ]
 };
 
 const mpName = memberOfParliament.KEY_HERE;
 console.log(mpName);
-
-
-const firstOfficeDept = EXPRESSION_HERE;  // <-- this should be the position of the office at index position 1 in the offices!
-// console.log(firstOfficePosition)
+// should log "David Hanson"
 
 
 const mpSentence = EXPRESSION_HERE; // <-- should be a string of the form "My name is <name_here>, I am a member of the <party_here>, serving <constituency_name>"
-// console.log(mpSentence)
-
-
-const mpSurname = EXPRESSION_HERE;
-// console.log(mpSurname);
+console.log(mpSentence);
 
 
 
 const lovelyFilm = {
-    "title": "Forrest Gump",
-    "rated": "PG-13",
-    "released": "06 Jul 1994",
-    "runtime": "142 min",
-    "genre": "Drama, Romance",
-    "director": "Robert Zemeckis",
-    "writer": "Winston Groom (novel), Eric Roth (screenplay)",
-    "actors": "Tom Hanks, Rebecca Williams, Sally Field, Michael Conner Humphreys",
-    "plot": "The presidencies of Kennedy and Johnson, Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.",
-    "language": "English",
-    "country": "USA",
-    "awards": "Won 6 Oscars. Another 40 wins & 67 nominations.",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-    "metascore": "82",
-    "imdbrating": "8.8",
-    "imdbvotes": "1,536,054",
-    "imdbid": "tt0109830",
-    "type": "movie",
-    "dvd": "28 Aug 2001",
-    "boxoffice": "$330,000,000",
-    "production": "Paramount Pictures",
-    "website": "http://www.paramount.com/movies/forrest-gump/",
+  "title": "Forrest Gump",
+  "rated": "PG-13",
+  "released": "06 Jul 1994",
+  "runtime": "142 min",
+  "genre": "Drama, Romance",
+  "director": "Robert Zemeckis",
+  "writer": "Winston Groom (novel), Eric Roth (screenplay)",
+  "actors": "Tom Hanks, Rebecca Williams, Sally Field, Michael Conner Humphreys",
+  "plot": "The presidencies of Kennedy and Johnson, Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.",
+  "language": "English",
+  "country": "USA",
+  "awards": "Won 6 Oscars. Another 40 wins & 67 nominations.",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+  "metascore": "82",
+  "imdbrating": "8.8",
+  "imdbvotes": "1,536,054",
+  "imdbid": "tt0109830",
+  "type": "movie",
+  "dvd": "28 Aug 2001",
+  "boxoffice": "$330,000,000",
+  "production": "Paramount Pictures",
+  "website": "http://www.paramount.com/movies/forrest-gump/",
 }
 
 
@@ -75,7 +69,7 @@ const lovelyFilm = {
 // console.log(yearOfRelease)
 
 
-// create a const called hoursOfDuration <-- should be the 
+// create a const called hoursOfDuration
 // console.log(hoursOfDuration) <-- should be the number of hours the film lasts for...
 
 
@@ -84,7 +78,7 @@ const lovelyFilm = {
 
 
 
-// create a const called actorCount that counts the number of actors listed in the film object - do this by accessing the object of course
+// create a const called actorCount that counts the number of actors listed in the film object - do this by accessing the actors property of course
 // console.log(actorCount)
 
 

@@ -9,19 +9,22 @@ Think carefully about your TDD approach : often it is most useful in these types
 Write a function `increaseNums` that takes an **array of numbers** and returns a new **array of numbers** incremented by a given `num`
 * If no `num` is provide, then you should return a copy of the original array with the numbers unaltered.
 
-* Form of input: `[ Number, Number, Number, ... ]`
-* Form of return value : `[ Number, Number, Number, ... ]`
+
+@param {Array} nums
+
+@returns {Array}
+
 
 Here are some sample inputs and return values that you could use to start building your tests...
 
 ```js
-const actual = incrementNums([23,32,94]);
-const expected = [23,32,94]
+incrementNums([23,32,94]);
+// should return [23,32,94]
 ```
 
 ```js
-const actual = incrementNums([10,3,6,8],10)
-const expected = [20,13,16,18]
+incrementNums([10,3,6,8],10)
+// should return [20,13,16,18]
 ```
 
 
@@ -31,18 +34,19 @@ const expected = [20,13,16,18]
 Write a function `multiplyNums` that takes an array of numbers and returns a new array of numbers multiplied by a given `num`
 * If no `num` is provide, then you should return a copy of the original array with the numbers unaltered.
 
+@param {Array} nums
 
-* Form of input: `[ Number, Number, Number, ... ]`
-* Form of return value : `[ Number, Number, Number, ... ]`
+@returns {Array}
+
 
 ```js
-const actual = muliplyNums([100,3,80]);
-const expected = [100,3,80];
+muliplyNums([100,3,80]);
+// should return [100,3,80];
 ```
 
 ```js
-const actual = increaseNums([3,10,5],2); 
-const expected = [6,20,4];
+increaseNums([3,10,5],2); 
+// should return [6,20,4];
 ```
 
 
@@ -50,23 +54,24 @@ const expected = [6,20,4];
 
 Write a function `extractPonyNames` that takes an **array of pony objects** and returns a new **array of strings** - each string being the name of the cat in the object
 
-* Form of input: `[ Object, Object, Object, ... ]`
-* Form of return value : `[ String, String, String, ... ]` (same length)
+@param {Array}
+
+@returns {Array}
 
 ```js
-const actual = extractPonyNames([{ name: 'Fluffy', legs: 4, age: 14, color: 'ginger' }]);
-const expected = ['Fluffy'];
+extractPonyNames([{ name: 'Fluffy', legs: 4, age: 14, color: 'ginger' }]);
+// should return [ 'Fluffy' ];
 ```
 
 ```js
-const actual = extractPonyNames([
+extractPonyNames([
         { name: 'Fluffy', legs: 4, age: 14, color: 'ginger' },
         { name: 'Tabitha', legs: 4, age: 12, color: 'ginger' },
         { name: 'Giles', legs: 3, age: 3, color: 'ginger' },
         { name: 'Belinda', legs: 4, age: 6, color: 'ginger' },
         { name: 'Horace', legs: 4, age: 2, color: 'ginger' },
       ]); 
-const expected = ['Fluffy', 'Tabitha', 'Giles', 'Belinda', 'Horace'];
+// should return ['Fluffy', 'Tabitha', 'Giles', 'Belinda', 'Horace'];
 ```
 
 
@@ -74,43 +79,87 @@ const expected = ['Fluffy', 'Tabitha', 'Giles', 'Belinda', 'Horace'];
 
 Write a function `getFullNames` that takes an array of objects and returns an array of strings - each string should represent the whole name of each person.
 
-* Form of input: `[ Object, Object, Object, ... ]` 
-* Form of return value : `[ String, String, String, ... ]` (same length)
+@param {Array}
+
+@returns {Array}
+
 
 ```js
-const actual = getFullNames([{ firstName : 'Sam', surName : 'Caine' }])
-const expected = ['Sam Caine'];
+getFullNames([{ firstName : 'Sam', surName : 'Caine' }])
+// should return ['Sam Caine'];
 ```
 
 ```js
-const actual = getFullNames([
+getFullNames([
     {firstName : 'Anat', surName: 'Dean' },
     {firstName : 'Sam', surName: 'Caine' },
     {firstName : 'Paul', surName: 'Copley' },
     {firstName : 'Michael', surName: 'Caine' }
     ]);
-const expected = ['Anat Dean', 'Sam Caine', 'Paul Copley', 'Michael Caine'];    
+// should return ['Anat Dean', 'Sam Caine', 'Paul Copley', 'Michael Caine'];    
 ```
 
-### `getFilmTitles()`
 
-Write a function `getFilmTitles` that takes an array of film objects and returns an array of film titles
+### `makeNameSentence`
+
+Write a function `makeNameSentence` that takes an array of objects and returns an array of strings - each string should represent the whole name of each person.
+
+@param {Array}
+
+@returns {Array}
+
 
 ```js
-const actual = getFilmTitles([{ title: 'The Jungle Book', year: 1994 }]);
-const expected = ['The Jungle Book'];
+makeNameSentence([{ firstName : 'Sam', surName : 'Caine', age: 30 }])
+// should return ['Sam Caine is 30 years old'];
 ```
 
 ```js
-const actual = getFilmTitles([
+makeNameSentence([
+    {firstName : 'Anat', surName: 'Dean', age: 22 },
+    {firstName : 'Sam', surName: 'Caine' , age: 30 },
+    {firstName : 'Paul', surName: 'Copley', age: 31 },
+    {firstName : 'Michael', surName: 'Caine', age: 86 }
+    ]);
+/** should return 
+['Anat Dean is 22 years old',
+ 'Sam Caine is 30 years old', 
+ 'Paul Copley is 31 years old', 
+ 'Michael Caine is 86 years old'];
+**/    
+```
+
+### `makeFilmDetails()`
+
+Write a function `makeFilmDetails` that takes an array of film objects and returns an array of film titles
+
+@param {Array}
+
+@returns {Array}
+
+```js
+makeFilmDetails([['The Jungle Book', 1994]]);
+// should return { title: 'The Jungle Book', year: 1994 }
+```
+
+```js
+makeFilmDetails([
+    ['The Jungle Book', 1994 ],
+    ['Mary Poppins', 1964],
+    ['The Sword in the Stone', 1963],
+    ['Aladdin', 1992],
+    ['Pocahontas', 1995 ],
+    ['Muppet Treasure Island',1996]
+  ]);
+/** should return [
     { title: 'The Jungle Book', year: 1994 },
     { title: 'Mary Poppins', year: 1964 },
     { title: 'The Sword in the Stone', year: 1963 },
     { title: 'Aladdin', year: 1992 },
     { title: 'Pocahontas', year: 1995 },
     { title: 'Muppet Treasure Island', year: 1996 }
-  ];)
-const expected = ['The Jungle Book','Mary Poppins','The Sword in the Stone','Aladdin','Pocahontas','Muppet Treasure Island'];
+  ]
+  **/
 ```
 
 ### `getMainDetails()`
@@ -118,11 +167,12 @@ const expected = ['The Jungle Book','Mary Poppins','The Sword in the Stone','Ala
 Write a function `getMainDetails` that takes an array of objects and returns an object with three properties:
 `"name"`,`"party"` and `"constituency"`
 
-* Form of input: `[ Object, Object, Object, ... ]` 
-* Form of return value : `[ Object, Object, Object, ... ]` ( same length )
+@param {Array}
+
+@returns {Array}
 
 ```js
-const actual = getMainDetails([
+getMainDetails([
     {
       'member_id': '41797',
       'person_id': '11500',
@@ -139,11 +189,11 @@ const actual = getMainDetails([
       ]
     }
 ]);
-const expected = [{ 'name': 'Theresa Villiers', 'party': 'Conservative', 'constituency': 'Chipping Barnet' }]
+// should return [{ 'name': 'Theresa Villiers', 'party': 'Conservative', 'constituency': 'Chipping Barnet' }]
 ```
 
 ```js
-const actual = getMainDetails([
+getMainDetails([
     {
       'member_id': '41797',
       'person_id': '11500',
@@ -217,7 +267,7 @@ const actual = getMainDetails([
       ]
     }
 ])
-const expected = [
+/** should return [
         {
           'name': 'Theresa Villiers',
           'party': 'Conservative',
@@ -233,6 +283,7 @@ const expected = [
           'constituency': 'Tunbridge Wells'
         }
       ];
+**/
 ```
 
 

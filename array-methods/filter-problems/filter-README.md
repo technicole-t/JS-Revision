@@ -1,15 +1,8 @@
-
-# filter challenges
+# Filter Challenges
 
 ### `getMultiplesOf10()`
 
-
 Write a function `getMultiplesOf10` that takes an array of numbers and returns an array of numbers that are **ONLY** multiples of 10 (that is they can be divided by 10 with no remainder).
-   
-@param {Array} nums
-
-@returns {Array}
-
 
 ```js
 getMultiplesOf10([3]);
@@ -26,16 +19,14 @@ getMultiplesOf10([10, 3, 7, 50, 56, 55, 100, 9, 2]);
 // should return [10, 50, 100];
 ```
 
-
-### getMultiples()
+### `getMultiples()`
 
 Write a function `getMultiples` that takes an array of numbers and returns an array of numbers that are **ONLY** multiples of a given number (that is they can be divided by this number with no remainder).
-   
+
 @param {Array} nums
 @param {number} multiple
 
 @returns {Array}
-
 
 ```js
 getMultiples([3]);
@@ -52,14 +43,9 @@ getMultiples([10, 3, 7, 50, 56, 55, 100, 9, 2]);
 // should return [10, 50, 100];
 ```
 
-### getJSFiles()
+### `getJSFiles()`
 
 Write a function `getJSFiles` that takes an array of file names and returns an array of js files only (those files ending with ".js" are javascript files)
-   
-@param {Array} fileNames
-
-@returns {Array}
-
 
 ```js
 getJSFiles(['README.md']);
@@ -72,10 +58,40 @@ getJSFiles(['index.js']);
 ```
 
 ```js
-getJSFiles(['challlenge.js','package.json','app.js','README.md']);
-// should return ['challlenge.js', 'README.md'];
+getJSFiles(['challenge.js', 'package.json', 'app.js', 'README.md']);
+// should return ['challenge.js', 'README.md'];
 ```
 
-### getOldCats()
+### `getOldCats()`
 
-### getRecentTitles()
+Write a function `getOldCats` that takes an array of cats and returns cats older than ten years old.
+
+```js
+getOldCats([
+  { name: 'Cuthbert', age: 1 },
+  { name: 'Garfield', age: 20 },
+  { name: 'Felix', age: 9 },
+]);
+/*
+Should return [{ name: 'Garfield', age: 20 }];
+*/
+```
+
+### `getRecentTitles()`
+
+Write a function `getRecentTitles` that takes an array of films and returns only films released in the last year.
+
+```js
+getRecentTitles([
+  { title: 'Toy Story 4', yearOfRelease: 2019 },
+  { title: 'Toy Story', yearOfRelease: 1995 },
+  { title: 'Coco', yearOfRelease: 2017 },
+]);
+/*
+Should return [
+  { title: 'Toy Story 4', yearOfRelease: 2019 },
+  { title: 'Toy Story', yearOfRelease: 1995 },
+  { title: 'Coco', yearOfRelease: 2017 },
+]
+*/
+```

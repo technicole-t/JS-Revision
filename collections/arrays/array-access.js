@@ -1,27 +1,16 @@
-// array-access problems
+const getOuterSum = () => {};
 
-const getOuterSum = (nums) => { };
+const getItem = () => {};
 
-const findGridItem = (grid, coordinates) => { };
+const findGridItem = () => {};
 
-const getItem = (arr, position) => { };
-
-const calculateDeterminant = matrix => { };
-
-
-
-
-
-
-
-module.exports = {
-    getOuterSum,
-    findGridItem,
-    getItem,
-    calculateDeterminant
+const calculateDeterminant = matrix => {
+  // work in progress :D
 };
 
-
-
-
-
+module.exports = {
+  getOuterSum,
+  findGridItem,
+  getItem,
+  calculateDeterminant
+};

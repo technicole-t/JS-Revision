@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/northcoders/fundamentals#readme",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "chai": "^4.2.0"

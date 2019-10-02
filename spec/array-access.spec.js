@@ -1,9 +1,7 @@
-const { expect } = require('chai');
+const { expect } = require("chai");
 
-describe('array-access-problems', () => {
-    describe('getOuterSum()', () => {
-        it('', () => {
-
-        });
-    });
+describe("array-access-problems", () => {
+  describe("getOuterSum", () => {
+    it("", () => {});
+  });
 });

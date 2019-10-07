@@ -47,13 +47,13 @@ getItem(["a", "b", "c", "d"], 6);
 
 ## `findGridItem()`
 
-Write a function `findGridItem` that takes an **array of arrays** (a 'grid') and an **array of numbers** ('coordinates') and returns whatever value is found in the grid at the coordinates provided. For example,
+Write a function `findGridItem` that takes an **array of arrays** (a 'grid') and an **array of numbers** ('coordinates') and returns whatever value is found in the grid at the 'co-ordinates' (indexes) provided. For example,
 
 ```js
 findGridItem([["a", "b", "c"], ["c", "d", "e"], ["f", "g", "h"]], [1, 2]);
 ```
 
-This call to `findGridItem` means go to the nested array and access the array at position 1, giving `['c', 'b', 'e' ]` and then go to position 2 inside this nested array which is `'e'`. You don't need a loop for this problem.
+This call to `findGridItem` means go to the nested array and access the array at index 1, giving `['c', 'd', 'e' ]` and then go to index 2 inside this nested array which is `'e'`. You don't need a loop for this problem.
 
 Here are some sample inputs and return values that you could use to start building your tests...
 

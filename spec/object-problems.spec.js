@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 
-describe("map-problems", () => {
-  describe("incrementNums", () => {
+describe("object-problems", () => {
+  describe("accessName", () => {
     it("", () => {});
   });
 });

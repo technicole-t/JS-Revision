@@ -1,17 +1,17 @@
+const getMultiplesOf10 = () => {}
 
+const getMultiples = () => {}
 
-const getMultiplesOf10 = () => { };
+const getJSFiles = () => {}
 
-const getMultiples = () => { };
+const getOldCats = () => {}
 
-const getJSFiles = () => { };
+const getRecentTitles = () => {}
 
-const getOldCats = () => { };
-
-const getRecentTitles = () => { };
-
-
-
-
-
-module.exports = { getMultiplesOf10, getJSFiles, getOldCats, getRecentTitles, getMultiples }
+module.exports = {
+  getMultiplesOf10,
+  getJSFiles,
+  getOldCats,
+  getRecentTitles,
+  getMultiples
+}

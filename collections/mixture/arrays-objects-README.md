@@ -1,6 +1,6 @@
 # array and object challenges
 
-These challenges invoke more complex data structures, so it is recommended to move onto these after completing both the array-access problems and the object-access problems.
+These challenges involve more complex data structures, so it is recommended to move onto these after completing both the array-access problems and the object-access problems.
 
 These are designed to be done with tests.
 

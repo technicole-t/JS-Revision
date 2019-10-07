@@ -1,7 +1,1 @@
-const { expect } = require("chai");
-
-describe("map-problems", () => {
-  describe("incrementNums", () => {
-    it("", () => {});
-  });
-});
+// write your tests for the map-problems here

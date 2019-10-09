@@ -4,7 +4,7 @@
 
 The repo is broken down into 2 sections: array-methods and collections
 
-### Array Methods
+### Array Methods
 
 Within the array-method folder itself are three sub-sections:
 

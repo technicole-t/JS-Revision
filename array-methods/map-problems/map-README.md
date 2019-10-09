@@ -1,4 +1,4 @@
-# map challenges
+# Instructions for `map-problems` katas:
 
 All of the following problems can be solved using the native `map` array method. `.map` is perfect for these functions because each needs to return:
 

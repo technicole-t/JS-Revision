@@ -8,7 +8,7 @@ const {
 
 const { expect } = require("chai");
 
-describe.only("getTotalCredit", () => {
+describe("getTotalCredit", () => {
   it("given an empty array with return an empty array", () => {
     const player = [];
     const actual = getTotalCredit(player);

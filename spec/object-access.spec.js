@@ -66,10 +66,40 @@ describe.only("addProperty", () => {
     const expected = { job: "teacher" };
     expect(actual).to.eql(expected);
   });
-  //   it("when passed an array, adds it to the existing object as a key value pair', () => {
-  //     const obj = { job: "teacher" };
-  //     const keyValuePair = ['name','mitch'];
-  //   });
+  it("when passed an array, adds it to the existing object as a key value pair", () => {
+    const obj = { job: "teacher" };
+    const keyValuePair = ["name", "mitch"];
+    const actual = addProperty(obj, keyValuePair);
+    const expected = { job: "teacher", name: "mitch" };
+    expect(actual).to.eql(expected);
+  });
+  it("when passed an array adds array to object as key value pairs ", () => {
+    const obj = { job: "teacher" };
+    const keyValuePair = ["name", "mitch", "food", "pizza"];
+    const actual = addProperty(obj, keyValuePair);
+    const expected = { job: "teacher", name: "mitch", food: "pizza" };
+    expect(actual).to.eql(expected);
+  });
+});
+
+// come back
+describe("removeName", () => {
+  it("when passed an object with an age property returns an object without it", () => {
+    const person = { name: "Nicole", age: 25, food: "sushi" };
+    const actual = removeName(person);
+    const expected = { name: "Nicole", food: "sushi" };
+    expect(actual).to.eql(expected);
+  });
+});
+
+describe("removeProperty", () => {
+  it("given an object and key it deletes that key value pair from the object", () => {
+    const obj = { name: "Nicole", age: 25, food: "sushi" };
+    const key = "age";
+    const actual = removeProperty(obj, key);
+    const expected = { name: "Nicole", food: "sushi" };
+    expect(actual).to.eql(expected);
+  });
 });
 
 // write your tests for the object-problems here

@@ -27,12 +27,15 @@ const accessNestedArray = (obj, index) => {
 
 const addProperty = (obj, keyValuePair) => {
   if (keyValuePair.length === 0) return obj;
-  // keyValuePair is an array with a key and a value
-  // e.g. ["name","mitch"]
-  // use this pair to add the key value pair to a new obj with all the properties of the old obj
-  // addProperty({job: 'teacher'},['name','mitch'])
-  // should return {job: 'teacher', name: 'mitch }
+  obj[keyValuePair[0]] = keyValuePair[1];
+  return obj;
 };
+
+// keyValuePair is an array with a key and a value
+// e.g. ["name","mitch"]
+// use this pair to add the key value pair to a new obj with all the properties of the old obj
+// addProperty({job: 'teacher'},['name','mitch'])
+// should return {job: 'teacher', name: 'mitch }
 
 const removeName = person => {
   // remove the age property from a person
@@ -40,6 +43,8 @@ const removeName = person => {
 };
 
 const removeProperty = (obj, key) => {
+  delete obj[key];
+  return obj;
   // remove the key value pair from an object
 };
 
